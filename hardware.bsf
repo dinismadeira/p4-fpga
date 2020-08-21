@@ -1,0 +1,253 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 304 400)
+	(text "hardware" (rect 5 0 60 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 363 24 380)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "PS2_clock" (rect 0 0 61 19)(font "Intel Clear" (font_size 8)))
+		(text "PS2_clock" (rect 21 27 82 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "PS2_data" (rect 0 0 59 19)(font "Intel Clear" (font_size 8)))
+		(text "PS2_data" (rect 21 43 80 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "KEY[1..0]" (rect 0 0 54 19)(font "Intel Clear" (font_size 8)))
+		(text "KEY[1..0]" (rect 21 59 75 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "GSENSOR_INT[2..1]" (rect 0 0 119 19)(font "Intel Clear" (font_size 8)))
+		(text "GSENSOR_INT[2..1]" (rect 21 75 140 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "SW[9..0]" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
+		(text "SW[9..0]" (rect 21 91 71 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "IAK" (rect 0 0 20 19)(font "Intel Clear" (font_size 8)))
+		(text "IAK" (rect 21 107 41 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "RM" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
+		(text "RM" (rect 21 123 39 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "data[15..0]" (rect 0 0 66 19)(font "Intel Clear" (font_size 8)))
+		(text "data[15..0]" (rect 21 139 87 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "addr[15..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "addr[15..0]" (rect 21 155 88 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "clock_50MHz" (rect 0 0 79 19)(font "Intel Clear" (font_size 8)))
+		(text "clock_50MHz" (rect 21 171 100 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "clock" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "clock" (rect 21 187 50 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "reset" (rect 0 0 29 19)(font "Intel Clear" (font_size 8)))
+		(text "reset" (rect 21 203 50 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "int" (rect 0 0 15 19)(font "Intel Clear" (font_size 8)))
+		(text "int" (rect 252 27 267 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 32)(pt 272 32))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "intv[3..0]" (rect 0 0 53 19)(font "Intel Clear" (font_size 8)))
+		(text "intv[3..0]" (rect 214 43 267 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 48)(pt 272 48)(line_width 3))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "VGA_R[3..0]" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "VGA_R[3..0]" (rect 196 59 267 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 64)(pt 272 64)(line_width 3))
+	)
+	(port
+		(pt 288 80)
+		(output)
+		(text "VGA_G[3..0]" (rect 0 0 73 19)(font "Intel Clear" (font_size 8)))
+		(text "VGA_G[3..0]" (rect 194 75 267 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 80)(pt 272 80)(line_width 3))
+	)
+	(port
+		(pt 288 96)
+		(output)
+		(text "VGA_B[3..0]" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "VGA_B[3..0]" (rect 196 91 267 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 96)(pt 272 96)(line_width 3))
+	)
+	(port
+		(pt 288 112)
+		(output)
+		(text "VGA_VS" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "VGA_VS" (rect 218 107 267 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 112)(pt 272 112))
+	)
+	(port
+		(pt 288 128)
+		(output)
+		(text "VGA_HS" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
+		(text "VGA_HS" (rect 217 123 267 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 128)(pt 272 128))
+	)
+	(port
+		(pt 288 144)
+		(output)
+		(text "LEDR[9..0]" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "LEDR[9..0]" (rect 205 139 267 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 144)(pt 272 144)(line_width 3))
+	)
+	(port
+		(pt 288 160)
+		(output)
+		(text "ARDUINO_IO[15..0]" (rect 0 0 116 19)(font "Intel Clear" (font_size 8)))
+		(text "ARDUINO_IO[15..0]" (rect 151 155 267 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 160)(pt 272 160)(line_width 3))
+	)
+	(port
+		(pt 288 176)
+		(output)
+		(text "HEX3[7..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "HEX3[7..0]" (rect 204 171 267 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 176)(pt 272 176)(line_width 3))
+	)
+	(port
+		(pt 288 192)
+		(output)
+		(text "HEX2[7..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "HEX2[7..0]" (rect 204 187 267 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 192)(pt 272 192)(line_width 3))
+	)
+	(port
+		(pt 288 208)
+		(output)
+		(text "HEX1[7..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "HEX1[7..0]" (rect 204 203 267 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 208)(pt 272 208)(line_width 3))
+	)
+	(port
+		(pt 288 224)
+		(output)
+		(text "HEX0[7..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "HEX0[7..0]" (rect 204 219 267 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 224)(pt 272 224)(line_width 3))
+	)
+	(port
+		(pt 288 240)
+		(output)
+		(text "HEX5[7..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "HEX5[7..0]" (rect 204 235 267 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 240)(pt 272 240)(line_width 3))
+	)
+	(port
+		(pt 288 256)
+		(output)
+		(text "HEX4[7..0]" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "HEX4[7..0]" (rect 204 251 267 270)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 256)(pt 272 256)(line_width 3))
+	)
+	(port
+		(pt 288 272)
+		(output)
+		(text "GSENSOR_CS_N" (rect 0 0 100 19)(font "Intel Clear" (font_size 8)))
+		(text "GSENSOR_CS_N" (rect 167 267 267 286)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 272)(pt 272 272))
+	)
+	(port
+		(pt 288 288)
+		(output)
+		(text "GSENSOR_SCLK" (rect 0 0 99 19)(font "Intel Clear" (font_size 8)))
+		(text "GSENSOR_SCLK" (rect 168 283 267 302)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 288)(pt 272 288))
+	)
+	(port
+		(pt 288 336)
+		(output)
+		(text "RMEM[15..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "RMEM[15..0]" (rect 192 331 267 350)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 336)(pt 272 336)(line_width 3))
+	)
+	(port
+		(pt 288 304)
+		(bidir)
+		(text "GSENSOR_SDI" (rect 0 0 88 19)(font "Intel Clear" (font_size 8)))
+		(text "GSENSOR_SDI" (rect 179 299 267 318)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 304)(pt 272 304))
+	)
+	(port
+		(pt 288 320)
+		(bidir)
+		(text "GSENSOR_SDO" (rect 0 0 94 19)(font "Intel Clear" (font_size 8)))
+		(text "GSENSOR_SDO" (rect 173 315 267 334)(font "Intel Clear" (font_size 8)))
+		(line (pt 288 320)(pt 272 320))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 368))
+	)
+)

@@ -1,0 +1,71 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 216 144)
+	(text "buttons_adc" (rect 5 0 60 17)(font "Intel Clear" (font_size 6)))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "buttons[11..0]" (rect 0 0 83 19)(font "Intel Clear" (font_size 8)))
+		(text "buttons[11..0]" (rect 21 27 104 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "btn_right" (rect 0 0 54 19)(font "Intel Clear" (font_size 8)))
+		(text "btn_right" (rect 125 27 179 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 32)(pt 184 32))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "btn_up" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "btn_up" (rect 137 43 179 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 48)(pt 184 48))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "btn_down" (rect 0 0 59 19)(font "Intel Clear" (font_size 8)))
+		(text "btn_down" (rect 120 59 179 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 64)(pt 184 64))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "btn_left" (rect 0 0 47 19)(font "Intel Clear" (font_size 8)))
+		(text "btn_left" (rect 132 75 179 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 80)(pt 184 80))
+	)
+	(port
+		(pt 200 96)
+		(output)
+		(text "btn_select" (rect 0 0 61 19)(font "Intel Clear" (font_size 8)))
+		(text "btn_select" (rect 118 91 179 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 96)(pt 184 96))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 112))
+	)
+)

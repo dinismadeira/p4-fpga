@@ -1,0 +1,211 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 256 320)
+	(text "IO_map" (rect 5 0 38 12)(font "Arial" ))
+	(text "inst" (rect 8 288 20 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "SW[9..0]" (rect 0 0 36 12)(font "Arial" ))
+		(text "SW[9..0]" (rect 21 27 57 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RM" (rect 0 0 16 12)(font "Arial" ))
+		(text "RM" (rect 21 43 37 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "data_in[15..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "data_in[15..0]" (rect 21 59 72 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "addr[15..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "addr[15..0]" (rect 21 75 62 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "g_sensor_z[15..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "g_sensor_z[15..0]" (rect 21 91 91 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "g_sensor_y[15..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "g_sensor_y[15..0]" (rect 21 107 94 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "g_sensor_x[15..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "g_sensor_x[15..0]" (rect 21 123 92 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "RMEM[15..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "RMEM[15..0]" (rect 21 139 76 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "clock" (rect 0 0 20 12)(font "Arial" ))
+		(text "clock" (rect 21 155 41 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 171 41 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "data_in_d[15..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "data_in_d[15..0]" (rect 157 27 219 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "terminal_write" (rect 0 0 54 12)(font "Arial" ))
+		(text "terminal_write" (rect 165 43 219 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 1))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "terminal_control" (rect 0 0 62 12)(font "Arial" ))
+		(text "terminal_control" (rect 157 59 219 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64)(line_width 1))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "terminal_color" (rect 0 0 55 12)(font "Arial" ))
+		(text "terminal_color" (rect 164 75 219 87)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80)(line_width 1))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "leds_write" (rect 0 0 38 12)(font "Arial" ))
+		(text "leds_write" (rect 181 91 219 103)(font "Arial" ))
+		(line (pt 240 96)(pt 224 96)(line_width 1))
+	)
+	(port
+		(pt 240 112)
+		(output)
+		(text "lcd_write" (rect 0 0 34 12)(font "Arial" ))
+		(text "lcd_write" (rect 185 107 219 119)(font "Arial" ))
+		(line (pt 240 112)(pt 224 112)(line_width 1))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "lcd_control" (rect 0 0 42 12)(font "Arial" ))
+		(text "lcd_control" (rect 177 123 219 135)(font "Arial" ))
+		(line (pt 240 128)(pt 224 128)(line_width 1))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "hex3_write" (rect 0 0 42 12)(font "Arial" ))
+		(text "hex3_write" (rect 177 139 219 151)(font "Arial" ))
+		(line (pt 240 144)(pt 224 144)(line_width 1))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "hex2_write" (rect 0 0 42 12)(font "Arial" ))
+		(text "hex2_write" (rect 177 155 219 167)(font "Arial" ))
+		(line (pt 240 160)(pt 224 160)(line_width 1))
+	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "hex1_write" (rect 0 0 41 12)(font "Arial" ))
+		(text "hex1_write" (rect 178 171 219 183)(font "Arial" ))
+		(line (pt 240 176)(pt 224 176)(line_width 1))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "hex0_write" (rect 0 0 42 12)(font "Arial" ))
+		(text "hex0_write" (rect 177 187 219 199)(font "Arial" ))
+		(line (pt 240 192)(pt 224 192)(line_width 1))
+	)
+	(port
+		(pt 240 208)
+		(output)
+		(text "hex5_write" (rect 0 0 42 12)(font "Arial" ))
+		(text "hex5_write" (rect 177 203 219 215)(font "Arial" ))
+		(line (pt 240 208)(pt 224 208)(line_width 1))
+	)
+	(port
+		(pt 240 224)
+		(output)
+		(text "hex4_write" (rect 0 0 43 12)(font "Arial" ))
+		(text "hex4_write" (rect 176 219 219 231)(font "Arial" ))
+		(line (pt 240 224)(pt 224 224)(line_width 1))
+	)
+	(port
+		(pt 240 240)
+		(output)
+		(text "mem_write" (rect 0 0 44 12)(font "Arial" ))
+		(text "mem_write" (rect 175 235 219 247)(font "Arial" ))
+		(line (pt 240 240)(pt 224 240)(line_width 1))
+	)
+	(port
+		(pt 240 256)
+		(output)
+		(text "data_out[15..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "data_out[15..0]" (rect 162 251 219 263)(font "Arial" ))
+		(line (pt 240 256)(pt 224 256)(line_width 3))
+	)
+	(port
+		(pt 240 272)
+		(output)
+		(text "int_mask[15..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "int_mask[15..0]" (rect 159 267 219 279)(font "Arial" ))
+		(line (pt 240 272)(pt 224 272)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 288)(line_width 1))
+	)
+)
